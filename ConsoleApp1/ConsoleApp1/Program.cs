@@ -4,16 +4,15 @@ namespace ConsoleApp1
 {
     internal class Program
     {
-        static int[] ShowArray(int[] myArray)
+        static void ShowArray(int[] myArray)
         {
             for (int i = 0; i < myArray.Length; i++)
             {
                  Console.Write(myArray[i]+" "); 
             }
             Console.WriteLine();
-           return myArray;
         }
-        static void firstWayToSolveArray(int[] myArray)
+        static void FirstWayToSolveArray(int[] myArray)
         {
             int MaxValue1 = 0;
             int MaxValue2 = 0;
@@ -35,7 +34,7 @@ namespace ConsoleApp1
             Console.WriteLine(MaxValue1);
             Console.WriteLine(MaxValue2);
         }
-        static void secondWayTiSolveArray(int[] myArray)
+        static void SecondWayToSolveArray(int[] myArray)
         {
             for (int i = 0; i < myArray.Length; i++)
             {
@@ -49,7 +48,7 @@ namespace ConsoleApp1
                 }
             }
         }
-        static void thirdWayToSolveArray()
+        static void ThirdWayToSolveArray()
         {
             Console.WriteLine("Введите кол-во элементов в массиве");
             int elementCount = int.Parse(Console.ReadLine());
@@ -76,18 +75,18 @@ namespace ConsoleApp1
 
                 if (UserChoice == 1)
                 {
-                    firstWayToSolveArray(myArray);
+                    FirstWayToSolveArray(myArray);
                     break;
                 }
                 if (UserChoice == 2)
                 {
-                    secondWayTiSolveArray(myArray);
+                    SecondWayToSolveArray(myArray);
                     break;
                 }
                 if (UserChoice == 3)
                 {
 
-                    thirdWayToSolveArray();
+                    ThirdWayToSolveArray();
                     break;
                 }
                 else
